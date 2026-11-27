@@ -2,13 +2,13 @@ import os
 import unittest
 from pathlib import Path
 
-from alembic import command
 from alembic.config import Config
 from dotenv import load_dotenv
 from fastapi.testclient import TestClient
 from sqlalchemy import create_engine, text
 from sqlalchemy.orm import sessionmaker
 
+from alembic import command
 from db import get_db
 from main import app
 

@@ -6,8 +6,8 @@ from services.abc_user_service import ABCUserService
 class FakeUserService(ABCUserService):
     def __init__(
         self,
-        users: list[models.User] = None,
-        raises: Exception = None,
+        users: list[models.User] | None = None,
+        raises: Exception | None = None,
     ):
         self._users = users or []
         self._raises = raises
